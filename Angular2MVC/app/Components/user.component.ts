@@ -42,9 +42,9 @@ export class UserComponent implements OnInit {
     LoadUsers(): void {
         this.indLoading = true;     
         this._userService.get(Global.BASE_USER_ENDPOINT)
-            .subscribe(users => { this.users = users; this.indLoading = false; })  //,
-           // error => this.msg = <any>error);
-
+            .subscribe(users => { this.users = users; this.indLoading = false; }  
+            //, error => this.msg = <any>error
+        );
     }
 
     addUser() {

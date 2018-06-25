@@ -9,7 +9,7 @@ export default class AppErrorHandler extends ErrorHandler {
     }
 
     handleError(error: any) {
-        if (error.status == '401')
+        if (error.status == '404')
             alert("You are not logged in, please log in and come back!")
         else
             alert(error);

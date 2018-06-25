@@ -19,7 +19,7 @@ var AppErrorHandler = /** @class */ (function (_super) {
         return _super.call(this, true) || this;
     }
     AppErrorHandler.prototype.handleError = function (error) {
-        if (error.status == '401')
+        if (error.status == '404')
             alert("You are not logged in, please log in and come back!");
         else
             alert(error);

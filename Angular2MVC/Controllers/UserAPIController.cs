@@ -13,7 +13,7 @@ namespace Angular2MVC.Controllers
     {
         public HttpResponseMessage Get()
         {            
-            return ToJson(UserDB.TblUsers.AsEnumerable());
+            return ErrorJson(UserDB.TblUsers.AsEnumerable());
         }
 
         public HttpResponseMessage Post([FromBody]TblUser value)
