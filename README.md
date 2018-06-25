@@ -5,4 +5,6 @@ This project is for learning Angular2 using ASP.NET and MVC Framework. <br />
 - Frontend is Angular2. mostly written in typescript file (ts) <br />
 - db using SQl Server database file (mdf) <br />
 
+Commit is done from VS2015 Publish (Sync)
+
 
