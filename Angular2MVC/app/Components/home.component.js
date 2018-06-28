@@ -12,7 +12,7 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent = __decorate([
         core_1.Component({
-            template: "<img src=\"../../images/users.png\" style=\"text-align:center\"/>\n                <button class=\"btn btn-primary\" (click)=\"IdontExist()\">ErrorButton</button>\n"
+            template: "<mat-card class=\"example-card\">\n                  <mat-card-header>\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>Users</mat-card-title>\n                    <mat-card-subtitle>Sample Image</mat-card-subtitle>\n                  </mat-card-header>\n                  <img mat-card-image src=\"../../images/users.png\" alt=\"Photo of a Users Icon\">\n                  <mat-card-content>\n                    <p>\n                      In this application, you can add new user, edit and delete existing user.\n                    </p>\n                  </mat-card-content>\n                  <mat-card-actions>\n                    <button mat-button>LIKE</button>\n                    <button mat-button>SHARE</button>\n                  </mat-card-actions>\n               </mat-card>\n"
         })
     ], HomeComponent);
     return HomeComponent;
