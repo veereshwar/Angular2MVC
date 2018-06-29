@@ -11,7 +11,6 @@ var common_1 = require("@angular/common");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
-var ng2_bs3_modal_1 = require("ng2-bs3-modal/ng2-bs3-modal");
 var animations_1 = require("@angular/platform-browser/animations");
 var material_1 = require("@angular/material");
 var material_2 = require("@angular/material");
@@ -23,15 +22,17 @@ var user_service_1 = require("./Service/user.service");
 var user_pipe_1 = require("./filter/user.pipe");
 var search_component_1 = require("./Shared/search.component");
 var errorhandler_1 = require("./Shared/errorhandler");
+var manageuser_component_1 = require("./components/manageuser.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, http_1.HttpModule, app_routing_1.routing, ng2_bs3_modal_1.Ng2Bs3ModalModule, forms_1.FormsModule, animations_1.BrowserAnimationsModule, material_1.MaterialModule, material_1.MdNativeDateModule, material_2.NoConflictStyleCompatibilityMode],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, user_component_1.UserComponent, user_pipe_1.UserFilterPipe, search_component_1.SearchComponent],
+            imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, http_1.HttpModule, app_routing_1.routing, forms_1.FormsModule, animations_1.BrowserAnimationsModule, material_1.MaterialModule, material_1.MdNativeDateModule, material_2.NoConflictStyleCompatibilityMode],
+            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, user_component_1.UserComponent, user_pipe_1.UserFilterPipe, search_component_1.SearchComponent, manageuser_component_1.ManageUser],
             providers: [{ provide: core_1.ErrorHandler, useClass: errorhandler_1.default }, { provide: common_1.APP_BASE_HREF, useValue: '/' }, user_service_1.UserService],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent],
+            entryComponents: [manageuser_component_1.ManageUser]
         })
     ], AppModule);
     return AppModule;
